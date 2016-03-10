@@ -12,4 +12,19 @@ class Cart
     {
         $this->data_source = $data_source;
     }
+
+    /**
+     * @param mixed $n
+     */
+    public function setN($n)
+    {
+        $this->n = $n;
+    }
+
+    public function setColumn($column)
+    {
+        $this->column = $column;
+    }
+
+
 }
