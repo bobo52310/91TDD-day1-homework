@@ -16,4 +16,14 @@ class PaginationContext implements Context
         $this->data_source = $table->getColumnsHash();
     }
 
+    /**
+     * @When /^以 "([^"]*)" 筆資料為一組取 "([^"]*)" 總和$/
+     */
+    public function 以3筆資料為一組取總和($n, $column)
+    {
+        $cart = new Cart($this->data_source);
+        $cart->setN($n);
+        $cart->setColumn($column);
+        $this->count = $cart->getCount();
+    }
 }
