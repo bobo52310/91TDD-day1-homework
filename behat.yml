@@ -1,5 +1,5 @@
 default:
     suites:
-        video_insert:
+        pagination:
             paths:    [ %paths.base%/features/pagination/fetch_value_by_pagination.feature ]
             contexts: [ PaginationContext ]
