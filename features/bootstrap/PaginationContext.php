@@ -19,7 +19,7 @@ class PaginationContext implements Context
     /**
      * @When /^以 "([^"]*)" 筆資料為一組取 "([^"]*)" 總和$/
      */
-    public function 以3筆資料為一組取總和($n, $column)
+    public function 以3筆資料為一組取cost欄位總和($n, $column)
     {
         $cart = new Cart($this->data_source);
         $cart->setN($n);
