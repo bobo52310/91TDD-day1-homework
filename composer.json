@@ -1,0 +1,13 @@
+{
+    "name": "bobochen/91tdd-day1-homework",
+    "authors": [
+        {
+            "name": "Bobo Chen",
+            "email": "bobo52310@gmail.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^4.8",
+        "behat/behat": "^3.0"
+    }
+}
