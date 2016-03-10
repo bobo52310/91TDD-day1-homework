@@ -20,5 +20,5 @@ Feature: 分頁取值
 
   Scenario:以3筆一組，取Cost總和
     When 以 "3" 筆資料為一組取 "cost" 總和
-    Then 得到 6,15,24,21
+    Then 得到結果 "6,15,24,21"
 
