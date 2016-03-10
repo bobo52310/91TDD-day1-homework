@@ -17,9 +17,9 @@ class PaginationContext implements Context
     }
 
     /**
-     * @When /^以 "([^"]*)" 筆資料為一組取 "([^"]*)" 總和$/
+     * @When /^以 (.*) 筆資料為一組取 (.*) 總和$/
      */
-    public function 以3筆資料為一組取cost欄位總和($n, $column)
+    public function 以N筆資料為一組取Column總和($n, $column)
     {
         $cart = new Cart($this->data_source);
         $cart->setN($n);
@@ -28,11 +28,11 @@ class PaginationContext implements Context
     }
 
     /**
-     * @Then /^得到結果 "([^"]*)"$/
+     * @Then /^得到結果 (.*)$/
      */
-    public function 得到結果($arg1)
+    public function 得到結果($result)
     {
-        PHPUnit_Framework_Assert::assertEquals($arg1, $this->count);
+        PHPUnit_Framework_Assert::assertEquals($result, $this->count);
     }
 
 }

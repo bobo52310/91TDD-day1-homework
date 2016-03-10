@@ -18,7 +18,11 @@ Feature: 分頁取值
       | 10 | 10   | 20      | 30        |
       | 11 | 11   | 21      | 31        |
 
-  Scenario:以3筆一組，取Cost總和
-    When 以 "3" 筆資料為一組取 "cost" 總和
-    Then 得到結果 "6,15,24,21"
+  Scenario Outline: 以 N 筆一組，取 Column 總和
+    When 以 <n> 筆資料為一組取 <column> 總和
+    Then 得到結果 <result>
 
+    Examples:
+      | n | column  | result     |
+      | 3 | cost    | 6,15,24,21 |
+      | 4 | revenue | 50,66,60   |
