@@ -1,8 +1,11 @@
-# 91哥 TDD 第一週作業(自動測試與 TDD 實務開發 第五梯)
+# 91哥 TDD 課程第一週作業(自動測試與 TDD 實務開發 第五梯)
 
 ## 作業內容
 
-嘗試使用 Gherkin 語法來描述需求：
+第一週作業需求：
+https://docs.google.com/spreadsheets/d/1P0nImGpaUYpP4yt_ecIM3TV9HtA8aE7ZyrflGoWuzsc/edit#gid=0
+
+這邊嘗試使用 Gherkin 語法來描述需求：
 ```
 Feature: 分頁取值
   In order to 依據條件分頁取值
