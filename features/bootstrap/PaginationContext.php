@@ -26,4 +26,13 @@ class PaginationContext implements Context
         $cart->setColumn($column);
         $this->count = $cart->getCount();
     }
+
+    /**
+     * @Then /^得到結果 "([^"]*)"$/
+     */
+    public function 得到結果($arg1)
+    {
+        PHPUnit_Framework_Assert::assertEquals($arg1, $this->count);
+    }
+
 }
