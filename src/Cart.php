@@ -13,6 +13,19 @@ class Cart
         $this->data_source = $data_source;
     }
 
+    public function getCount()
+    {
+        $group = array_chunk($this->data_source, $this->n);
+        foreach ($group as $item) {
+            $ans = 0 ;
+            foreach ($item as $it) {
+                $ans = $ans + (int)$it[$this->column];
+            }
+            $result[] = $ans;
+        }
+        return implode(',',$result);
+    }
+
     /**
      * @param mixed $n
      */
