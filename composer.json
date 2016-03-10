@@ -6,6 +6,7 @@
             "email": "bobo52310@gmail.com"
         }
     ],
+    "keywords": ["tdd", "bdd", "behat", "homework", "unit test", "php", "testing"],
     "require": {
         "phpunit/phpunit": "^4.8",
         "behat/behat": "^3.0"
