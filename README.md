@@ -2,6 +2,8 @@
 
 > 自動測試與 TDD 實務開發（第五梯）- 第一週作業專案
 
+**繁體中文** | [English](README.en.md)
+
 ## 專案簡介
 
 這是一個使用 **TDD（測試驅動開發）** 和 **BDD（行為驅動開發）** 方法論實作的分頁取值功能。本專案展示如何使用 Behat（PHP 的 BDD 框架）和 Gherkin 語法來描述需求並驅動開發。
@@ -21,13 +23,17 @@
 
 ```
 .
-├── README.md                   # 專案說明文件
+├── README.md                   # 專案說明文件（中文）
+├── README.en.md                # 專案說明文件（英文）
 ├── composer.json               # Composer 設定檔
 ├── behat.yml                   # Behat 設定檔
 ├── docs/                       # 學習文件目錄
-│   ├── 01-TDD-基本概念與流程.md
-│   ├── 02-BDD-與-Behat-使用指南.md
-│   └── 03-專案實作步驟.md
+│   ├── 01-TDD-基本概念與流程.md (中文)
+│   ├── 01-TDD-Fundamentals-and-Workflow.md (English)
+│   ├── 02-BDD-與-Behat-使用指南.md (中文)
+│   ├── 02-BDD-and-Behat-Guide.md (English)
+│   ├── 03-專案實作步驟.md (中文)
+│   └── 03-Project-Implementation-Steps.md (English)
 ├── src/                        # 原始碼目錄
 │   └── Cart.php               # 分頁計算核心類別
 └── features/                   # Behat 測試目錄
@@ -131,40 +137,46 @@ vendor/bin/behat -dl
 
 ## 學習文件
 
-本專案包含完整的 TDD/BDD 學習文件，位於 `docs/` 目錄：
+本專案包含完整的 TDD/BDD 學習文件，位於 `docs/` 目錄，提供**繁體中文**和 **English** 雙語版本：
 
-### 📚 [01-TDD-基本概念與流程.md](docs/01-TDD-基本概念與流程.md)
-
-學習內容：
-- TDD 是什麼？
-- TDD 的三大法則
-- Red-Green-Refactor 循環
-- TDD vs 傳統開發流程
-- TDD 的優點與挑戰
-- 實務建議
-
-### 📚 [02-BDD-與-Behat-使用指南.md](docs/02-BDD-與-Behat-使用指南.md)
+### 📚 TDD 基本概念與流程
+- [中文版：01-TDD-基本概念與流程.md](docs/01-TDD-基本概念與流程.md)
+- [English: 01-TDD-Fundamentals-and-Workflow.md](docs/01-TDD-Fundamentals-and-Workflow.md)
 
 學習內容：
-- BDD 基本概念
+- TDD 是什麼？/ What is TDD?
+- TDD 的三大法則 / The Three Laws of TDD
+- Red-Green-Refactor 循環 / Red-Green-Refactor Cycle
+- TDD vs 傳統開發流程 / TDD vs Traditional Development
+- TDD 的優點與挑戰 / Benefits and Challenges
+- 實務建議 / Practical Recommendations
+
+### 📚 BDD 與 Behat 使用指南
+- [中文版：02-BDD-與-Behat-使用指南.md](docs/02-BDD-與-Behat-使用指南.md)
+- [English: 02-BDD-and-Behat-Guide.md](docs/02-BDD-and-Behat-Guide.md)
+
+學習內容：
+- BDD 基本概念 / BDD Fundamentals
 - BDD vs TDD
-- Gherkin 語法詳解
+- Gherkin 語法詳解 / Gherkin Syntax Deep Dive
   - Feature、Scenario、Given-When-Then
   - Background、Scenario Outline
-  - Table（表格資料）
-- Behat Context 實作
-- Behat 設定與命令
-- BDD 最佳實踐
+  - Table（表格資料）/ Table Data
+- Behat Context 實作 / Behat Context Implementation
+- Behat 設定與命令 / Behat Configuration and Commands
+- BDD 最佳實踐 / BDD Best Practices
 
-### 📚 [03-專案實作步驟.md](docs/03-專案實作步驟.md)
+### 📚 專案實作步驟
+- [中文版：03-專案實作步驟.md](docs/03-專案實作步驟.md)
+- [English: 03-Project-Implementation-Steps.md](docs/03-Project-Implementation-Steps.md)
 
 學習內容：
-- 完整的 TDD/BDD 實作流程
-- 從需求分析到程式實作
-- Red-Green-Refactor 實戰範例
-- 程式碼重構技巧
-- 常見問題與解決方案
-- 延伸練習建議
+- 完整的 TDD/BDD 實作流程 / Complete TDD/BDD Workflow
+- 從需求分析到程式實作 / From Requirements to Implementation
+- Red-Green-Refactor 實戰範例 / Red-Green-Refactor Examples
+- 程式碼重構技巧 / Code Refactoring Techniques
+- 常見問題與解決方案 / Common Issues and Solutions
+- 延伸練習建議 / Extended Exercise Suggestions
 
 ## 核心程式碼
 
